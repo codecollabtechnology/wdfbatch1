@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Method</title>
+    </head>
+    <body>
+
+
+        <script type="text/javascript">
+
+
+            let firstname = 'aye';
+            let lastname = "aye";
+            
+            // console.log(firstname , lastname);
+            // console.log(firstname.length);
+
+            // Concat(+)
+
+            console.log(firstname);//aye
+            console.log(firstname + lastname);
+
+            // concat (string) main string 
+
+            console.log(firstname.concat(lastname));
+
+            // Append (+=)
+
+            // assignment operators (+,+=)
+
+            let name1 = "Pwint ";
+            let name2 = "Lay";
+
+            console.log(name1 + name2); //concat
+            console.log(name1.concat(name2));
+
+            // name1 = name2;
+            name1 += name2;
+            console.log(name1);
+
+            console.log(name2);
+
+            let num1 = 10;
+            let num2 = 20;
+
+            console.log(num1,num2);//10 20
+            console.log(num1 + num2);//30
+
+            // num1 = num2;
+            // num1 = num1 + num2;
+            num1 += num2
+
+            console.log(num1);//30
+
+            // += number - calculate
+            // += string - append
+
+
+
+            // String (character array in js)
+
+            let boy = "aung aung";
+
+            console.log(boy);
+            console.log(typeof boy);
+            console.log(boy.length); //9
+
+            console.log(boy[0]);//a
+            console.log(boy[5]);//a
+            console.log(boy[4]);
+
+            console.log(boy[boy.length-1]); //g
+
+
+
+            // CharAt() main string count with index
+
+            const name = "aye aye";
+
+            console.log(name);//aye aye
+
+            console.log(name[4]);
+
+            console.log(name.charAt(4));
+            console.log(name.charAt(name.length-1));//e
+
+
+            // includes() string method case sensitive 
+
+            let favfruit = "my fav fruit is apple";
+
+            console.log(favfruit);
+
+            console.log(favfruit.includes("apple"));//true
+            console.log(favfruit.includes("Apple"));//false
+            console.log(favfruit.includes("app"));//true
+            console.log(favfruit.includes(" "));//true
+
+
+            // replace(old,new) string method case sensitive just replace frist words that see
+
+            let color = "My fav color is green color";
+
+            console.log(color);
+
+            console.log(color.replace("green","blue"));//my fav color is blue color
+            console.log(color.replace("gre","blue"));//my fav color is blueen color
+            console.log(color.replace("color","colour"));//my fav colour is green color
+
+
+
+            // substring(index,length); string method index set staring point , length set ending point
+
+            console.log(color);
+
+            console.log(color.substring(0,10));//my fav col
+            console.log(color.substring(1,10));//y fav col
+            console.log(color.substring(0,10)+"...");//my fav col...
+            console.log(color.substring(0,10).concat("..."));//my fav col...
+
+
+
+            // Change Case string method
+
+            console.log(color);//my fava color is green color
+            console.log(color.toLowerCase());//my fav color is green color
+            console.log(color.toUpperCase());//MY FAV COLOR IS GREEN COLOR
+            
+
+            
+
+
+
+
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrow Function</title>
+
+    </head>
+    <body>
+
+      
+
+
+        <script type="text/javascript">
+
+            // 2 type of function 
+                // (1) Default Function | System Function 
+
+                // (2) User Define Function
+                        // (i) Regular Function
+                                // (a) Manual Function (without parameter)
+                                // (b) Paremeter Function 
+                                        // (1) Single paremeter function 
+                                        // (2) Multi parameter function 
+                        // (ii) Arrow Function (Ecma 6)
+                                // (a) Manual Function (without parameter)
+                                // (b) Paremeter Function 
+                                        // (1) Single paremeter function 
+                                        // (2) Multi parameter function 
+
+                        //Generator Function
+  
+
+          // (ii) Arrow Function (Ecma 6)
+
+          const nameless1 = function(){
+                var num1= 100;
+                return num1;
+          }
+
+          console.log(nameless1());
+
+
+          // (a) Manual Function (without parameter)
+
+
+          const arrowfun1 = () => {
+                var num1= 200;
+                return num1;
+          }
+
+          console.log(arrowfun1());
+
+          const arrowfun2 = () => {
+            var num1 = 500;
+            return num1;
+          }
+
+          console.log(arrowfun2()+20); //520
+
+           // (b) Paremeter Function 
+                // (1) Single paremeter function 
+
+
+          const arrowfun3 = num1 => {
+            return num1;
+          }
+
+          console.log(arrowfun3(200));
+
+          const arrowfun4 = (num1) => num1;
+
+          console.log(arrowfun4(6000));
+
+
+        //   in arrow function - single parameter () is optional
+
+
+        // (b) Paremeter Function 
+                // (1) Multi paremeter function 
+
+        const multi1 = (num1=10,num2=20) => {
+            var total = num1 + num2;
+            return total;
+        }
+
+        console.log(multi1(100,200)); //300
+        console.log(multi1()); //30
+
+
+          
+
+
+
+        </script>
+    </body>
+</html>
+
+
+<!-- 8AR  -->
+
+
+
+
+
+
+
+

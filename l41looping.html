@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Looping</title>
+    </head>
+    <body>
+
+
+        <script type="text/javascript">
+
+       
+            const name = "aung aung";
+            console.log(name);
+                        //      0    1       2      3       4
+         
+            
+            //1. For Loop
+
+            //    start       end       ?? 
+            // for(statement1;statement2;statement3){
+            //     write what we want;
+            // }
+
+
+            for(var i = 0;i <= 4;i++){
+                console.log(i);
+            }
+
+            console.log("hello");
+            console.log("i outside value is = " ,i); //5
+            
+
+            for(let p=10;p<=20;p++){
+                console.log(p);
+            }
+
+            // console.log("p outside value is = " ,p);
+
+
+            // const can't override so can't also use in for loop
+            // for(const a =4;a<=8;a++){
+            //     console.log(a);
+            // }
+
+            for(var k=0;k<=10;k++){
+                console.log(k);
+
+                if(k === 5){
+                    console.log("5 is my number")
+                }
+                
+            }
+
+            console.log("k outside value is = " ,k); //11
+
+
+            for(var q = 0;q<=10;q++){
+                
+
+                if(q === 4){
+                    console.log("4 is my number");
+                    break;
+                }
+
+                console.log(q);
+            }
+
+            console.log("q outside value is = " ,q); //4
+
+            for(var m =0;m<=10;m++){
+
+                if(m === 3){
+                    console.log(m + " is my number");
+                    continue;
+                }
+                console.log(m);
+            }
+
+            console.log("m outside value is = " ,m); //11
+
+            for(var d = 10;d > 0;d--){
+                console.log(d);
+            }
+
+            console.log("d outside value is = " ,d); //0
+
+            //Exercise
+
+            // let arrcolor = ['red','green','blue','pink','black'];
+            let arrcolor = ["red","green","blue","black","gold"];
+            console.log(arrcolor);
+            
+            // console.log(arrcolor[0]);
+            // console.log(arrcolor[1]);
+            // console.log(arrcolor[2]);
+            // console.log(arrcolor[3]);
+            // console.log(arrcolor[4]);
+
+
+
+            for(var a =0;a < 5;a++){
+                // console.log(a);
+
+                console.log(arrcolor[a]);
+            };
+
+
+
+            const person = [
+                {name:"Aung Aung",age:"25"},
+                {name:"May May",age:"40"},
+                {name:"Aye Aye",age:"20"}
+            ];
+
+            console.log(person[0].name);
+
+            for(var r = 0;r < person.length;r++){
+                // console.log(r);
+
+                console.log("Name = " + person[r].name + " Age = " + person[r].age);
+            };
+
+
+        // ---------------------------------------------------------
+
+            //2. For In Loop 
+
+            // for(key/index in Object/Array){
+            //     what we want 
+            // }
+
+            let girl = {
+                name: "Lu Hpring",
+                age:"25",
+                city:"yangon",
+                phone:"09123456"
+            };
+
+            console.log(girl);
+            // console.log(girl.name);
+
+
+            // array refrerence 
+            for(key in girl){   
+                // console.log(key);
+
+                // console.log(girl.key); //undefined . notation
+                console.log(girl[key]); // bracket notation
+            };
+
+
+
+            const myteam = [ 'aung aung','maung maung','zaw zaw','kyaw kyaw','may may'];
+
+            console.log(myteam);
+
+            // console.log(myteam[2]);
+
+            for(idx in myteam){
+                // console.log(idx); //string
+
+                console.log(myteam[idx]);
+            };
+
+            const talk = "Hello"; //string is character array in js
+
+            // console.log(talk[0]);
+
+            for(idx in talk){
+
+                // console.log(idx);
+                console.log(talk[idx]);
+            }
+
+         //............................................
+
+            //3. For Of Loop  (Array)
+            // only for array 
+
+            // for(value of Array){
+            //     what we want;
+            // }
+            
+            const ladies = ["Aye Aye","May May","Zin Zin","Lu LU"];
+
+            console.log(ladies[3]);
+
+            for(abc of ladies){
+                console.log(abc);
+
+                // console.log(ladies);
+            };
+
+            const thanks = 'You';
+
+            for(thank of thanks){
+                console.log(thank);
+            };
+
+
+            // let singles = {
+            //     name:"aung aung",
+            //     age:"25"
+            // };
+
+            // console.log(singles);
+
+            // for(single of singles){
+            //     console.log(single);
+            // };
+
+            // 4. While Loop
+
+            // start 
+
+            // while(condition){
+            //         before printout
+            //     what we want;
+            //         after printout
+            // };
+
+
+            let b = 0;
+
+            while(b < 10){
+
+                b++;
+                console.log("b value is = " +b);
+                
+
+            };
+
+            console.log("b outside value is = " ,b);
+
+
+            const colors = ['red',"green","blue","gold","black"];
+
+            console.log(colors);
+
+            let c = 0;
+
+            while(c < colors.length){
+
+                // console.log(c);
+                console.log(colors[c]);
+                c++;
+                
+            };
+
+
+            const mobile = [
+                {
+                    model:"Xiaomi",
+                    ram:"8GB",
+                    storage:"512gb"
+                }
+            ];
+
+
+            console.log(mobile);
+            console.log(mobile[0].ram);
+
+            let index = 0;
+
+            while(index < mobile.length){
+
+                console.log("model is = "+ mobile[index].model + " ram is = " + mobile[index].ram+"storage is = " + mobile[index].storage);
+                index++;
+            };
+
+
+            //5.Do While Loop
+
+            // start 
+
+            // do{
+            //         before printout
+            //     what we want
+            //         after printout
+
+            // }while(condition);
+
+
+            let n = 0;
+
+            do{
+
+                console.log("N vlaue is = ",n);
+                n++;
+
+            }while(n < 10);
+
+
+
+            let g = 0;
+
+            do{
+                g++;
+                console.log("g value is = ",g);
+
+            }while(g < 10);
+
+            console.log("g outside value is = ",g);
+
+
+            const paints = ["red","green","blue","black","gold"];
+            console.log(paints);
+
+
+            let pp = 0;
+
+            do{
+
+                // console.log(pp);
+                console.log(paints[pp]);
+                pp++;
+            }while(pp < paints.length);
+
+
+            //forEach Loop ( to be continue ....)
+            
+                                // call function 
+            // mainarray.forEach(function(value,index,array){
+            //     what we want;
+            // });
+
+            const mycolors = ["red","green","blue","black","pink","gold"];
+
+            // console.log(mycolors);
+            // console.log(mycolors[3]);
+
+            mycolors.forEach(function(mycolor,idx,arr){
+                // console.log(mycolor);
+                // console.log(idx);
+                // console.log(mycolors);
+
+                console.log("index number is "+ idx + ' color is '+ mycolor);
+            })
+
+
+
+
+            // map loop 
+
+            // mainarrays.map(function(value,index,array){
+            //     what we want;
+            // })
+
+
+            const villagers = ['soe soe','maung maung','kyaw gyi','aung aung','maung gyi'];
+
+            // console.log(vallagers);
+
+            const getvillager = villagers.map(function(villager){
+                // console.log(villager);
+                
+                return `U ${villager}`;
+            })
+
+
+            console.log(getvillager);
+
+            // const getvilla = villagers.forEach(function(villager){
+            //     // console.log(villager)
+            //     return villager;
+            // })
+
+            // console.log(getvilla);
+
+
+
+            // filter loop 
+
+            // mainarrays.filter(function(value){
+            //     what we want;
+            // })
+
+            const ages = [20,40,50,12,18,17,24,90,32,55,65]; // 11 idx - 0 / 10
+            // console.log(ages);
+
+            const getage = ages.filter(function(age){
+                // console.log(age);
+                // console.log(age > 18); //boolean
+
+                return age >= 18;
+            })
+
+            console.log(getage);
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
+
+
+<!-- 19FE -->
+
+
+<!-- 
+for Loop 
+For In  Loop
+For Of Loop
+While loop
+Do While Loop 
+-->
+
+
+<!-- Comparison Opertors -->
+<!--  
+
+== eqal to
+=== equal to
+
+!= not equal to
+!== not equal to
+
+> greater than
+< less than
+
+>= greater than and equal
+<= less than and equal
+? Statement (ternary operator) 
+
+-->
+
+
+
+<!-- Assignment Operators  -->
+
+<!-- 
+
+=
++=
+-=
+*=
+/=
+%=
+
+-->  
+
+ <!-- Logical Operators  -->
+<!-- 
+&& and 
+|| or 
+! not
+ -->
+
+  <!-- 24DW -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+

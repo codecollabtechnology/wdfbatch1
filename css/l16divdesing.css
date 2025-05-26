@@ -1,0 +1,64 @@
+.firstdiv{
+	width: 600px;
+	height: 200px;
+
+	background-color: hsla(302, 100%, 67%, 1);
+	color: #fff;
+	font-size: 10px;
+}
+
+.seconddiv{
+/*	width: 2000px;*/
+	height: 600px;
+
+/*	background-image: url(./../img/fav/logo.png);*/
+	
+	background: url(./../img/fav/logo.png);
+	background-color: green;
+	background-position: center;
+/*	background-repeat: no-repeat;*/
+/* 	background-repeat: repeat-x;*/
+	background-repeat: repeat-y;
+
+}
+
+.thirddiv{
+	width: 800px;
+	height: 600px;
+
+		
+	background-image: linear-gradient(red,blue,green,hsla(57, 100%, 54%, 1));
+/*	background: url(./../img/fav/logo.png) ;*/
+/*	background-color: skyblue;*/
+
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.fourthdiv{
+	width: 1000px;
+	height: 600px;
+
+	background-image: linear-gradient(
+		90deg,
+		hsla(160, 48%, 59%, 0.5),
+		hsla(50, 96%, 40%, 0.8),
+		hsla(4, 100%, 30%, 1)),
+		url(./../img/fav/logo.png);
+/*	background-color: linear-gradient(green,blue);*/
+/*	background: linear-gradient(green,blue);*/
+
+
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*
+linear-gradient at least two color contain
+
+working in namining color,hsla ,rgba
+
+deg would be always in top of the parameter
+
+*/

@@ -1,0 +1,52 @@
+h2{
+	color: skyblue;
+}
+
+/*single selector*/
+h3{
+	color: steelblue;
+}
+
+
+/*group selector */
+h4,h5,h1{
+	color: violet;
+	font-size: 20px;
+}
+
+
+#idselector1{
+	color: green;
+	font-size: 50px;
+}
+
+#idselector2,#idselector3,h4{
+	color: purple;
+}
+
+#idselector4{
+	color: red;
+}
+
+.classselector{
+	color: blue;
+}
+
+.classselector1{
+	color: skyblue;
+}
+
+/*
+
+Single Selector (fa)
+Group Selector (,)
+
+Element Selector (h1,p,div,span)
+
+ID Selector - #
+Class Selector - (.) dot
+
+*/
+
+
+

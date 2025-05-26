@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Template String</title>
+    </head>
+    <body>
+
+        <ul>
+            <li>Name : Ma Ma</li>
+            <li>Age : 20</li>
+            <li>Job : Doctor</li>
+            <li>City : Yangon</li>
+        </ul>
+
+       
+
+
+        <script type="text/javascript">
+
+            var fullname = "Aung Aung";
+            console.log(fullname);
+
+            // let name = "Maung Maung";
+            // console.log(name);
+
+            // const age = 20;
+            // console.log(age);
+
+            const name = 'Lu Hpring';
+            const age = 25;
+            const job = 'Singer';
+            const city = 'Mandalay';
+
+            // let liststyle ;
+
+            // liststyle = "<h1>We are family</h1>";
+
+            // let liststyles = '<h1>Respect each other</h1>';
+            // console.log(liststyle);
+            // console.log(liststyles);
+
+            // document.write(liststyle);
+            // document.write(liststyles);
+
+            // Writhout Template String 
+            // let liststyle = "<ul><li>Name : Ma Ma</li><li>Age : 20</li><li>Job : Doctor</li><li>City : Yangon</li></ul>";
+            // let liststyle = "<ul>"+
+            //                     "<li>Name : Ma Ma</li> "+
+            //                    "<li>Age : 20</li>"+
+            //                     "<li>Job : Doctor</li>"+
+            //                     "<li>City : Yangon</li>"+
+            //                 "</ul>";
+
+            let liststyle = "<ul>"+
+                                "<li>Name :"+name+"</li>"+
+                               "<li>Age :"+age+"</li>"+
+                                "<li>Job :"+job+"</li>"+
+                                "<li>City :"+city+"</li>"+
+                            "</ul>";
+            
+            
+            console.log(liststyle);
+
+            document.write(liststyle);
+    
+            // With Template String ``
+            let style = `<ul>
+                                <li>Name : ${name}</li>
+                                <li>Age : ${age}</li>
+                                <li>Job : ${job}</li>
+                                <li>City : ${city}</li>
+                        </ul>`;
+            document.write(style);
+        </script>
+    </body>
+</html>
+
+<!-- 19TS -->

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Method</title>
+    </head>
+    <body>
+
+
+        <script type="text/javascript">
+
+            let arrcolor = ['red','green','blue','white','black'];
+
+            console.log(arrcolor);
+            console.log(arrcolor.length);
+
+            console.log(arrcolor[1]);
+            console.log(typeof arrcolor);
+            console.log(typeof arrcolor[1]);
+
+
+
+            // indexOf(value) value - index 
+
+            const name = 'maung maung';
+
+            console.log(name);//maung maung
+
+            console.log(Array.isArray(name));//false
+
+            console.log(arrcolor); //['red', 'green', 'blue', 'white', 'black']
+
+            console.log(arrcolor.indexOf('green')); //1
+            console.log(arrcolor.indexOf('Green')); //-1
+            console.log(arrcolor.indexOf('white')); //3
+
+
+
+            // join(delimitor) 
+            console.log(arrcolor.toString());
+            console.log(String(arrcolor));
+            console.log(arrcolor.toString('-'));
+            console.log(arrcolor.join("-"));
+
+            const items = ['candy','apple','orange','milk','water'];
+
+
+            // Push(value) adding value form the end
+
+            console.log(items);// ['candy', 'apple', 'orange', 'milk', 'water']
+            items[5] = "stawberry";
+
+
+            items.push('chocolate');
+            items.push('spicy noodles','energy drink') //['candy', 'apple', 'orange', 'milk', 'water', 'stawberry', 'chocolate', 'spicy noodles', 'energy drink']
+            console.log(items);
+            console.log(items.length);
+
+
+            //unshift(value); adding value form start
+
+            items.unshift('pineapple','blueberry');
+
+            console.log(items);
+            console.log(items.length);
+
+
+
+            //shift(); remove value and  index form start 
+            items.shift();
+            items.shift(); // ['candy', 'apple', 'orange', 'milk', 'water', 'stawberry', 'chocolate', 'spicy noodles', 'energy drink']
+
+
+            console.log(items);
+            console.log(items.length);
+
+
+            //pop(); remove value and index form the end
+
+            items.pop();
+            items.pop();
+
+            console.log(items); //['candy', 'apple', 'orange', 'milk', 'water', 'stawberry', 'chocolate', 'spicy noodles', 'energy drink']
+            console.log(items.length); 
+
+            //delete (keyword) just delete value not index
+
+            // delete items[1]; 
+
+            console.log(items);
+
+            //---------------------------------
+
+            //splice(index,length); index make starting point and lenght make ending point 
+
+            const cutitems = items.splice(3,9);
+
+            console.log(cutitems);
+
+
+
+
+            //concat();
+
+            const name1 = ['aung aung','maung maung','kyaw kyaw','zaw zaw'];
+            const name2 = ['aye aye','hla hla','mu mu','lu lu'];
+
+
+            console.log(name1+name2); //aung aung,maung maung,kyaw kyaw,zaw zawaye aye,hla hla,mu mu,lu lu
+
+            console.log(name1.concat(name2)); //['aung aung', 'maung maung', 'kyaw kyaw', 'zaw zaw', 'aye aye', 'hla hla', 'mu mu', 'lu lu']
+
+
+            //sort()  A - Z
+
+            const sortname = name1.concat(name2);
+
+            console.log(sortname);
+
+            console.log(sortname.sort()); //['aung aung', 'aye aye', 'hla hla', 'kyaw kyaw', 'lu lu', 'maung maung', 'mu mu', 'zaw zaw']
+
+
+
+
+
+        </script>
+    </body>
+</html>
+
+<!-- 17AM -->
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARRAY</title>
+    </head>
+    <body>
+
+
+        <script type="text/javascript">
+
+            let boy = "aung aung";
+            console.log(boy);
+
+            // let arrboy = NewArray('aung aung','maung maung');
+            // console.log(arrboy)
+
+            let arrboy = [
+                "aung aung",
+                "maung maung"
+            ];
+
+            arrboy = [
+                'aye aye',
+                'mya mya',
+                'may may',
+                'su su'
+            ];
+
+            console.log(arrboy);
+            console.log(typeof arrboy);
+            console.info(arrboy.length);
+            console.table(arrboy);
+
+            console.log(arrboy[2]);
+            console.log(arrboy[arrboy.length - 2]);
+
+            let some = ['hello',1500,false,true,undefined,null,new Date(),["red","green"],{firstname: "aung",lastname:'kyaw'}];
+
+            console.log(some);
+            console.log(some.length);
+
+            console.log(some[4]);
+            console.log(typeof some[4]);
+
+            console.log(some[6]);
+            console.log(typeof some[6]);
+
+            console.log(some[7]);
+            console.log(typeof some[7]);
+
+            console.log(some[7][1]);
+
+            console.log(some[8]);
+
+            console.log(some[8].firstname);
+            console.log(typeof some[8].firstname); //string
+
+            console.log(some[3]);
+            console.log(typeof some[3]);
+
+            let color = ["red","green","blue"];
+
+
+                // = assignment operator
+                color[1] = "pink";
+                color[3] = "black";
+                color[3] = "gold";
+                color[7] = 'purple';
+
+
+            console.log(color);
+
+            let arranimal = ["dog","cat","bird"];
+
+                arranimal[3] = "tiger";
+                arranimal[4] = "panda";
+                arranimal[5] = "snake";
+
+                arranimal[6] = ["human","women",["men","girl"]];
+
+                arranimal[0] = 'lion';
+            console.log(arranimal);
+            console.log(arranimal[6][1]);
+            console.log(arranimal[6][2][1]);
+
+            console.log(arranimal.length);
+            console.table(arranimal);
+
+            // Nested Array 
+
+            const nesarr = ["men","women",
+                ["girl","boy"],
+                ["grandpa","grandma",
+                ["child","grandchild",
+                    ["son","daughter"]
+                ]]
+            ];
+
+            console.log(nesarr);
+
+            console.log(nesarr[3][1]);//grandma
+            console.log(nesarr[3][2][1]);//grandchild
+            console.log(nesarr[3][2][2][1]);//daughter
+
+
+
+        </script>
+    </body>
+</html>
+
+
+
+<!-- 6LT -->
+
+

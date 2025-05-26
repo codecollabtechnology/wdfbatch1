@@ -1,0 +1,47 @@
+.paragraph{
+	color: green;
+
+/*	user-select: none;*/
+}
+
+
+/*.paragraph .hay{
+	color: red;
+
+	font-size: 30px;
+}*/
+
+
+/*.paragraph::first-line{
+	color: red;
+}*/
+
+/*.paragraph::first-letter{
+	color: red;
+
+	font-size: 30px;
+}*/
+
+
+
+.paragraph::selection{
+	color: #fff;
+	background-color: orange;
+}
+
+
+/*.paragraph::before{
+	content: "ABC";
+
+	color: red;
+	font-size: 40px;
+}*/
+
+
+/*.paragraph::after{
+	content: 'EFG';
+
+	color: red;
+	font-size: 40px;
+}
+*/

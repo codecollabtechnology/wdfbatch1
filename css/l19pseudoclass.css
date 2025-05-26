@@ -1,0 +1,88 @@
+/*.div1{
+	width: 300px;
+	height: 100px;
+	background-color: green;
+}*/
+
+
+/*.div1:first-child{
+	width: 300px;
+	height: 100px;
+	background-color: green;
+}*/
+
+
+/*.div1:last-child{
+	width: 300px;
+	height: 100px;
+	background-color: green;
+}*/
+
+/*.div1:nth-child(6){
+	width: 300px;
+	height: 100px;
+	background-color: green;
+}*/
+
+/*.div1:nth-child(even){
+	width: 300px;
+	height: 100px;
+	background-color: green;
+}
+*/
+
+/*.div1:first-of-type{
+	width: 300px;
+	height: 100px;
+	background-color: green;
+}*/
+
+/*.div1:last-of-type{
+	width: 300px;
+	height: 100px;
+	background-color: steelblue;
+}
+*/
+
+/*.div1:nth-of-type(6){
+	width: 300px;
+	height: 100px;
+	background-color: green;
+}*/
+
+.div1:nth-of-type(even){
+	width: 300px;
+	height: 100px;
+	background-color: green;
+}
+
+.div1:nth-of-type(odd){
+	width: 300px;
+	height: 100px;
+	background-color: gray;
+}
+
+.p1:first-child{
+	background-color: green;
+}
+
+
+
+
+
+
+
+
+
+/*pseudo class (:)
+:first-child (all child)
+:last-child (all child)
+
+nth (ordinary number)
+
+1st,2nd,3rd,4th,5th ,..... nth
+
+
+31PC
+
+*/

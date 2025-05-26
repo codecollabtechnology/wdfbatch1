@@ -1,0 +1,177 @@
+/*Font Integrate
+
+(i) Local Machine Intergration
+(ii) Global Intergration or Project Folder Intergration
+*/
+
+
+/*(i) Local Machine Intergration*/
+
+/*at-rule
+@identifier rule ---+++++
+*/
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');*/
+@import url(./l17addfile.css);
+
+
+*{
+	cursor: pointer;
+}
+
+@font-face{
+	font-family: "abc";
+	src: url(./../fonts/stick/Stick-Regular.ttf);
+}
+
+
+@font-face{
+	font-family: "efg";
+	src:local(AkayaTelivigala-Regular) ,url(./../fonts/Akaya_Telivigala/AkayaTelivigala-Regular.ttf) format("woff");
+}
+
+
+
+/*body{
+	cursor: pointer;
+}
+*/
+
+/*.p1{
+	font-family: "Arial";
+}
+
+.p3{
+	font-family: Arial;
+}
+
+.p3{
+	font-family: "Time New Roman";
+}
+
+.p4{
+	font-family: Arial,"Time New Roman",Century;
+}*/
+
+
+/*(ii) Global Intergration or Project Folder Intergration*/
+
+/*body{
+	font-family: "Stick",sans-serif,Arial;
+}*/
+
+.p1{
+	cursor: pointer;
+	font-family: "efg", system-ui;
+
+	color: red;
+}
+
+
+.p3{
+
+	font-family: "efg", system-ui !important;
+	color: purple;
+}
+
+.p3{
+	font-family: "abc";
+	color: darkseagreen !important;
+	color: forestgreen;
+}
+
+
+.p2,.p4{
+	font-family: "abc",sans-serif,Arial ;
+
+	color: green;
+}
+
+.textmenu{
+	color: steelblue;
+	text-decoration: none;
+/*	background-color: blue;*/
+
+	padding: 10px;
+/*			top/button left/right*/
+/*	padding: 10px 20px;*/
+/*			 t 		r   b*/
+/*	padding: 10px 20px 30px 40px;*/
+	transition: all 2s;
+}
+
+.textmenu:hover{
+	text-decoration: underline;
+}
+
+
+.textmenu:visited{
+	color: red;
+}
+
+.menu{
+	color: #fff;
+	background-color: blue;
+	font-size: 25px;
+	padding: 10px 20px;
+
+	text-decoration: none;
+
+	transition: color,background-color 2s;
+}
+
+.menu:hover{
+	color: #000;
+	background-color: green;
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+.icon{
+	width: 100px;
+
+	transition: all 0.5s;
+}
+
+.icon:hover{
+	width: 80px;
+}
+
+
+
+
+
+/*
+
+element selector
+class selector
+id selector
+attribure selector
+
+
+universal selector (*) always top of the css code not for @import 
+
+pseudo class (:)
+
+
+font thickness 100 - 900
+regular 400
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@font-face - font-family,src 
+
+@indentifier (rule)
+
+at-rule - .....++++
+
+
+old browser version -- font file format .woff
+we use .ttf (true type font)
+
+*/
+
+/* 11HV */
+
+

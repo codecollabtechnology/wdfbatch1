@@ -1,0 +1,55 @@
+.textalign{
+/*	text-align: left;*/
+/*	text-align: right;*/
+/*	text-align: center;*/
+	text-align: justify;
+}
+
+.textdecoration{
+/*	text-decoration: underline;*/
+/*	text-decoration: overline;*/
+/*	text-decoration: line-through;*/
+}
+
+.taga{
+	text-decoration: none;
+}
+
+.textline{
+	letter-spacing: 3px;
+/*	line-height: 30px;*/
+/*	line-height: 3;*/
+	line-height: 200%;
+}
+
+.textshadow{
+
+		/*	h    v   b     c  
+			hoz vtl blur color
+		*/
+/*	text-shadow: 5px 5px 3px red ;*/
+/*	text-shadow: -5px 5px 3px green;*/
+/*	text-shadow: 5px 5px 3px #46ebcc;*/
+/*	text-shadow: 5px 5px 3px hsla(108, 80%, 47%, 1);*/
+
+	text-shadow: 5px 5px 3px green,6px 6px 3px red,8px 8px 3px skyblue;
+}
+
+
+/*
+line-height unit optional 
+is we don't use px it set one line
+in 100% one line
+
+
+Text Shadow
+vtl in + go down
+vtl in - go up
+
+hoz in + right
+hoz in - left
+
+naming color,hsla color,rgba color
+can use multi shadow color
+
+*/

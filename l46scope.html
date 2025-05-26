@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scope </title>
+
+    </head>
+    <body>
+
+      
+        <script type="text/javascript">
+
+
+        // Global scope
+
+        const name = 'Aung Aung';
+                // name = 'kyaw kyaw'; error
+        // const name = "kyaw kyaw"; error
+        console.log(name);
+
+        let town = 'Yangon';
+            // town = "Bago"; //bago
+        // let town = "Mandalay"; //error
+        console.log(town);
+
+        var country = "Myanmar";
+            // country = "Thailand"; //Thailand
+        var country = "Malaysia "; //Malaysia
+        console.log(country);
+
+
+        // for(const x = 0;x < 10;x++){
+        //    console.log(x); // 0 error
+        // }
+        // console.log('x outside value is = ' + x);
+
+        // let y = 0
+        for(let y = 0;y < 10;y++){
+            console.log(y); // 0 - 9
+        }
+
+        // console.log('y outside value = ', y); //10
+
+
+        for(var z = 0;z < 10;z++ ){
+            console.log(z);
+        }
+
+        console.log('z outside value is = ' + z); // 10
+
+
+    //---------------------------------------------------------------------
+
+    const num1 = 0;
+    let num2 = 0;
+    var num3 = 0;
+
+    //New declare
+
+    // for(const num1 = 10;num1 < 20;num1++){
+    //     console.log(num1);
+    // }
+
+    for(let num2 = 1;num2 < 10;num2++){
+        console.log(num2);
+    } 
+    console.log('num2 outside value is ' + num2); //0
+
+    for(var num3 = 1;num3 < 10;num3++){
+        console.log(num3);
+    }
+
+    console.log('num3 outside value is ' + num3);//10
+
+    // ECMA 6 -- var 
+
+
+
+
+    //Object
+
+    const peoples = {
+        fullname: "Aung Aung",
+        age:25,
+        phone:"09154488"
+    }
+    
+    console.log(peoples);
+    console.log(peoples.fullname);
+    console.log(peoples.age);
+    console.log(peoples.phone);
+
+
+    peoples.city ="Mandalay";
+    console.log(peoples);
+
+    peoples.fullname = 'Ko Aung Aung';
+    console.log(peoples);
+
+    // peoples = {
+    //     contry:"Myanmar"
+    // }
+
+    // console.log(peoples);
+
+
+    let kids = {
+        fullname: 'Maung Maung',
+        age:15,
+        phone:"091545487"
+    }
+
+    console.log(kids);
+    console.log(kids.fullname,kids.age,kids.phone);
+
+    kids.city = "Yangon";
+
+    console.log(kids);
+
+    kids.fullname = "Baby Maung Maung";
+
+    console.log(kids);
+
+    kids = {
+        country: "Myanmar"
+    }
+
+    console.log(kids);
+
+    var girls = {
+        fullname:" May May",
+        age: 20,
+        phone:"091514478"
+    }
+
+    console.log(girls);
+
+    girls.country = "Myanmar";
+
+    console.log(girls);
+
+
+    girls = {
+        city: "Bago"
+    }
+
+    console.log(girls);
+
+
+
+         
+        </script>
+    </body>
+</html>
+
+<!-- 22BS -->
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+*{
+	font-family: "Stick", serif;
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+
+
+:root{
+	--wcc:#f4f4f4;
+	--gnc:green;
+	--dbc:darkblue;
+	--orc:orange;
+	--grc:gray;
+}
+
+body{
+/*	viewport height - vh*/
+/*	viewport width - wh*/
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/*font-family: "Stick", serif;
+  	font-weight: 400;
+  	font-style: normal;*/
+}
+
+.container{
+	width: 480px;
+	background-color: rgba(0, 0, 0, .3);
+
+/*	border: 2px solid var(--grc);*/
+
+/*	h v b c*/
+	box-shadow: 2px 15px rgba(0, 0, 0, .3);
+
+	border-radius: 5px;
+
+	/*font-family: "Stick", serif;
+  	font-weight: 400;
+  	font-style: normal;*/
+}
+
+.container h2{
+	text-align: center;
+}
+
+.form-group{
+	margin-bottom: 30px;
+}
+
+.container .form{
+	padding: 30px 40px;
+
+}
+
+.form-group label{
+	display: block;
+	color: #000;
+
+	margin-bottom: 5px;
+}
+
+.form-group .form-control{
+/*	  padding not fair*/
+	width: 100%;
+	padding: 10px;
+
+	box-sizing: border-box;
+
+	border-radius: 5px;
+}
+
+.form .btn{
+	width: 100%;
+	background-color: var(--orc);
+	color: var(--wcc);
+
+	font-size: 18px;
+	padding: 10px;
+
+	cursor: pointer;
+	border-radius: 5px;
+/*	border-style: none;*/
+	border: none;
+
+	transition: background-color .5s;
+}
+
+.form .btn:hover{
+	background-color: var(--gnc);
+}
+
+.form .btn:active{
+	background-color: var(--dbc);
+}
+
+.container h2{
+	font-family: "Stick", serif;
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+.form-group .form-control::placeholder{
+	color: rgba(0, 0, 0, 0.3);
+}
+
+/*gmail address*/

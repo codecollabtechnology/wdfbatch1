@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object Literals (JavaScript object)</title>
+    </head>
+    <body>
+
+
+        <script type="text/javascript">
+
+            let girlfriend = {
+
+                firstname: "Lu",
+                lastname: "Hpring",
+                age : 25
+            };
+            
+            // girlfriend = ["Lu","Hpring","25"];
+
+            let firstname = "aung aung";
+
+            console.log(firstname);
+            
+            // console.log(girlfriend);
+            // console.error(girlfriend);
+            // console.warn(girlfriend);
+            // console.info(girlfriend);
+            console.table(girlfriend);
+            console.log(typeof girlfriend);
+
+            console.log(girlfriend.firstname);
+            console.log(girlfriend.lastname);
+            console.log(girlfriend.age);
+
+            // dot(.) use to call object JavaScript objects
+            console.log(typeof(girlfriend.firstname));
+            console.log(typeof(girlfriend.lastname));
+            console.log(typeof girlfriend.age);
+
+            const people = {
+                firstname: 'aung',
+                middleaname: 'aung',
+                lastname: 'zaw',
+                age: 36,
+                single: true,
+                email: 'aunganng@gamil.com',
+
+                address: {
+                    no: "No.123",
+                    street : "St 2"
+                },
+
+                hobbies: ['sleep','eat','game']
+            };
+
+            console.table(people);
+            console.log(typeof people);
+
+            console.log(typeof people.firstname); //string
+            console.log(typeof people.age);//number
+            console.log(typeof people.single); //boolean
+
+            console.log(typeof people.address.no);
+            console.log(people.address.street);
+
+            console.log(people.hobbies[0]);
+            console.log(people.hobbies[1]);
+            console.log(people.hobbies[3]);//undefined
+            console.log(people.hobbies[3-1]);//game
+
+            console.log(people.hobbies.length); //3
+
+            console.log(people.hobbies[people.hobbies.length-1]);//game
+
+            console.log(typeof people.hobbies);
+
+
+        </script>
+    </body>
+</html>
+
+<!-- 6LT -->
+
+

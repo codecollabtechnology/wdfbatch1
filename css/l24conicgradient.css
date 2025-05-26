@@ -1,0 +1,183 @@
+.circle1{
+	width: 200px;
+	height: 200px;
+	background-color: green;
+
+	border-radius: 50%;
+}
+
+.circle2{
+	width: 200px;
+	height: 200px;
+	background: linear-gradient(
+		45deg,
+		red,
+		green);
+
+	border-radius: 50%;
+}
+
+.circle3{
+	width: 200px;
+	height: 200px;
+	background: conic-gradient(
+		yellow 40%,
+		blue 0% 60%,
+		green 0% 100%);
+
+	border-radius: 50%;
+}
+
+.circle4{
+	width: 200px;
+	height: 200px;
+	background: conic-gradient(
+		rgba(181, 159, 67, 0.99) 50%,
+		#3af0b6 0% 60%,
+		hsla(358 85% 77% / 0.87) 0% 80%,
+		red 0%
+	);
+
+	border-radius: 50%;
+}
+
+.circle5{
+	width: 200px;
+	height: 200px;
+	background: linear-gradient(
+		90deg,
+		red 20%,
+		green 0% 40%,
+		blue 0% 60%,
+		yellow 0%
+	);
+}
+
+
+.box1{
+	width: 800px;
+	height: 230px;
+	background-color: gray;
+
+	display: flex;
+/*	hz center*/ 
+	justify-content: center;
+/*	vt center*/
+	align-items: center;
+
+/*	display: grid;*/
+/*	place-items: center;*/
+
+	position: relative;
+
+}
+
+.box1 .div1{
+	width: 200px;
+	height: 200px;
+	background-color: purple;	
+
+/*	left right top bottom */
+	position: absolute;
+/*	left: 0;*/
+/*	top: 0;*/
+
+	border-radius: 50%;
+
+	z-index: 2;
+}
+
+.box1 .div2{
+	width: 220px;
+	height: 220px;
+	background: conic-gradient(
+		red,
+		yellow 30%,
+		red,
+		green 70%,
+		red,
+		blue 100%
+	);
+
+	position: absolute;
+/*	left: 0;*/
+/*	top: 0;*/
+
+	border-radius: 50%;
+
+	z-index: 1;
+}
+
+
+.poinercontainer{
+	width: 20px;
+	height: 100px;
+/*	background-color: whitesmoke;*/
+/*	border-radius: 50%;*/
+
+	position: absolute;
+	bottom: 100px;
+
+	z-index: 3;
+
+	animation-name: myanimation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+
+
+/*		smooth transition*/
+	animation-timing-function: linear;
+
+/*					center , bottom.top*/
+	transform-origin: bottom;
+
+
+/*	display: inline;*/
+
+}
+
+.pointer{
+	width: 20px;
+	height: 20px;
+	background-color: green;
+	border-radius: 50%;
+
+	position: absolute;
+
+/*	display: block;*/
+
+	z-index: 4;
+
+
+}
+
+
+@keyframes myanimation{
+	from{
+		transform: rotate(0deg);
+	}
+
+	to{
+		transform: rotate(1turn);
+	}
+}
+
+/*@keyframes myanimation{
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(-360deg);
+	}
+}*/
+
+
+/*
+
+z-index value default zero 0
+
+
+*/
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date and Time</title>
+    </head>
+    <body>
+
+        <div class="footer">
+            <small>Copyright <span id="autoyear"> </span> . All rights reserved.  The is not responsible for the content of external sites</small>
+        </div>
+
+
+        <script type="text/javascript">
+
+        
+            let date = new Date(); //class / object
+            console.log(date); //Mon Feb 24 2025 20:23:49 GMT+0630 (Myanmar Time)
+
+            console.log(new Date());
+
+            let getdate = new Date().getDate(); // class method
+                getdate = date.getDate();
+            console.log(getdate); //24
+
+            let hour = date.getHours();
+                hour = new Date().getHours();
+            console.log(hour);
+
+            let minute = date.getMinutes();
+                minute = new Date().getMinutes();
+            console.log(minute);
+
+            let second = date.getSeconds();
+                second = new Date().getSeconds();
+            console.log(second);
+
+            // 1s = 1000ms
+            // 1 jan 1970 -> uptonow
+            let time = date.getTime();
+            console.log(time);
+
+            let now = Date.now();
+            console.log(now); //1740407327496.545496
+
+            // arrary [] 0 - 11
+            // index number 0 - 11 
+            // 0      1    2   3       4      5       6        7   8       9      10   11
+            // ['jan','feb','mar','apr','may','june','july','aug','sep','oct','nov','dec']
+            let month = date.getMonth();
+            console.log(month);
+
+            //  0       1      2    3   4       5       6
+            // ['sun','mon','tue','web','thur','fri','sat']
+            let day = date.getDay();
+                day = new Date().getDay();
+            console.log(day);
+
+            let year = date.getFullYear();
+            console.log(year); //2025
+
+
+           // Coordinate Universal Time (-12  myanmar +6:30 12)
+            let utcyear = date.getUTCFullYear();
+            console.log(utcyear); //Copyright 2025 BBC. All rights reserved.  The BBC is not responsible for the content of external sites
+
+            document.getElementById('autoyear').innerText = year;
+            document.getElementById('autoyear').textContent = year;
+            document.getElementById('autoyear').innerHTML = year;
+
+            let birthday = new Date();
+                        // m d y hr:min:sec 
+                birthday = new Date('9-11-2000');
+                birthday = new Date('11-5-1990 11:23:56');
+            console.log(birthday);
+
+
+            birthday.setMonth(5);
+            birthday.setDate(20);
+            birthday.setFullYear(1980);
+
+            birthday.setHours(20);
+            birthday.setMinutes(45);
+            birthday.setSeconds(50);
+
+            console.log(birthday);
+
+
+
+        </script>
+    </body>
+</html>
+
+<!-- 25SE -->

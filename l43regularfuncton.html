@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function</title>
+        <style type="text/css">
+
+            *{
+                box-sizing: border-box;
+            }
+
+            body{
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container{
+                width: 300px;
+
+                background-color: #f3f3f3;
+                padding: 10px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+            }
+
+            label{
+                display: block;
+                margin: 10px 0;
+            }
+
+            .form-control{
+                width: 100%;
+                padding: 5px;
+            }
+
+            .btn{
+                width: 100%;
+
+                background-color: skyblue;
+                color: #000;
+
+                font-size: 16px;
+
+                border: none;
+
+                padding: 5px;
+                margin-top: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <h3> Full Name = <span id="replacename"></span></h3>
+
+            <form>
+                <div class="form-group">
+                    <label for="firstname">Firstname</label>
+                    <input type="text" name="firstname" id="firstname" class="form-control" autocomplete="off" autofocus/>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" name="lastname" id="lastname" class="form-control" autocomplete="off"/>
+                </div>
+
+                <button type="button" class="btn" onclick="getdata()">Get Name</button>
+            </form>
+
+        </div>
+
+
+        <script type="text/javascript">
+
+            // 2 type of function 
+                // (1) Default Function | System Function 
+
+                // (2) User Define Function
+                        // (i) Regular Function
+                                // (a) Manual Function (without parameter)
+                                // (b) Paremeter Function 
+                                        // (1) Single paremeter function 
+                                        // (2) Multi parameter function 
+                        // (ii) Arrow Function (Ecma 6)
+                                // (a) Manual Function (without parameter)
+                                // (b) Paremeter Function 
+                                        // (1) Single paremeter function 
+                                        // (2) Multi parameter function 
+                        // (iii) Genrator Function
+
+            // function name(){
+            //     what we want;  
+            // };
+
+            //name();  //function recall , function invoke
+            // function die 
+
+
+
+            // (i) Manual Function 
+
+            // function can invoke before defined 
+            you();
+
+            function you(){
+                console.log("hello beauty");
+            };
+
+            you();
+
+           // you(); //hello beauty
+            //you(); //hello beauty
+
+
+            // console.log(go);
+            // var go = "yangon";
+            // variable can't use before defined
+
+            fone();
+
+            function fone(){
+                console.log("i am function one");
+            };
+
+            fone();
+
+            ftwo();
+
+
+            function ftwo(){
+                fone();
+                console.log("i am function two");
+            };
+
+            fthree(); // f1 f3 f1 f2
+
+            function fthree(){
+                fone();
+                console.log("i am function three");
+                ftwo();
+            };
+
+
+            // function can invoke in other function too ***
+
+            ffour();            
+
+            function ffour(){
+                console.log('aung aung');
+            }
+
+            ffour();
+
+            ffour();
+
+            function ffour(){
+                console.log('kyaw kyaw');
+            }
+
+            ffour();
+    
+
+            let per = "aung aung";
+            console.log(per);  //aung aung
+
+            console.log(per);
+           
+            per = 'maung maung';
+
+            console.log(per);
+
+
+            //Return 
+
+            function ffive(){
+                console.log(10);
+            }
+
+            // ffive();
+
+            function fsix(){
+                console.log(20);
+            }
+
+            // fsix();
+
+            function fseven(){
+                const num1 = ffive(); //undefined
+                const num2 = fsix(); //undefined
+
+                console.log(num1);
+                console.log(num2);
+
+                const total = num1 + num2; 
+                console.log(total); //NaN not a number
+
+                // ffive();//10
+            }
+
+            fseven();
+
+            // const num1 = console.log(10);
+
+            // console.log(num1);
+
+            function feight(){
+                return 10;
+            }
+
+            feight();
+
+            function fnine(){
+                const num1 = feight();
+
+                console.log(num1+50);
+            }
+
+            fnine();
+
+            function ften(){
+                var a = 10;
+                var b = 20;
+
+                // return a;
+
+                if(a > b){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+
+            ften();
+
+            console.log(ften());
+
+
+            function feleven(){
+                var a = 20;
+                var b = 10;
+
+                return a+b-20;
+            }
+
+            function ftwelve(){
+                // do
+                // const num1 = 500;
+                // return num1;
+
+                // var num1;
+                // return num1=10;
+
+                // don't
+
+                // return var num1;
+                // return var num1 = 20;
+            }
+
+
+
+            console.log(ftwelve());
+            // printout function 
+            // return function 
+
+// -------------------------------------------------------------
+
+// (b) Paremeter Function 
+    // (1) Single paremeter function 
+
+    const name = "maung maung";
+
+    function fun1(name){
+        console.log('hello '+name);
+    }
+
+    fun1("aung aung");
+    fun1("aye aye");
+    fun1(); //hello undefined
+    fun1("kyaw kyaw","may may"); //hello kyaw kyaw
+
+//     function fun2(){
+//         console.log('hello ayeaye');
+//     }
+
+//    fun2();
+
+
+
+
+// (b) Paremeter Function 
+    // (1) Multi paremeter function 
+
+    function multifun1(a,b,c){
+        console.log("my fav number is " + a +"," + b+"," + c);
+    }
+
+    multifun1(10,20,30); //my fav number is 10,20,30
+    multifun1(); //my fav number is undefined,undefined,undefined
+    multifun1(10); //my fav number is 10,undefined,undefined
+    multifun1(10," ",30); //my fav number is 10, ,30
+    // multifun1(10, ,30); //error
+    
+
+    //Default Paremeter 
+
+    function multifun2(a=10,b,c=30){
+        console.log("my fav number is " + a +","+b+","+c);
+    }
+
+    multifun2(20,40); //my fav number is 20,40,30
+
+
+    //Nameless Function
+
+    // const nameless = function(name="Kyaw Kyaw",love="May May"){
+    //     console.log(`My name is ${name} and ${love} is my sister.`);
+    // };
+
+    // console.log(nameless());
+
+    function getdata(){
+        // console.log('hello');
+
+        const getfirstname = document.getElementById('firstname').value;
+        const getlastname = document.getElementById('lastname').value;
+        // console.log(getfirstname, getlastname);
+        
+        const getreplacename = document.getElementById('replacename');
+
+            // getreplacename.innerText = `${getfirstname} ${getlastname}`;
+            // getreplacename.innerHTML = `${getfirstname} ${getlastname}`;
+            getreplacename.textContent = `${getfirstname} ${getlastname}`;
+
+            document.getElementById('firstname').value = "";
+            document.getElementById('lastname').value = "";
+
+        document.getElementById('firstname').focus();
+
+    }
+
+
+
+
+        </script>
+    </body>
+</html>
+
+
+<!-- 6FN  -->
+
+
+
+
+
+
+
+

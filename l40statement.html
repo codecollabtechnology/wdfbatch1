@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Statement</title>
+    </head>
+    <body>
+
+
+        <script type="text/javascript">
+
+        //    100 > 200 ? true : false;
+
+        const a = 100;
+        const b = 200;
+
+        console.log( a > b ? "Yes" : "No"); //No
+        console.log( a < b ? "Yes" : "No");  //Yes
+
+        // check only value
+        console.log(a == b ? "Yes" : "No"); //Yes
+        // check value and date type 
+        console.log(a === b ? "Yes" : "No"); //No
+
+        console.log(a == b ? "Yes" : (a > b) ? "a greater than b" : " a less than b");//a greater than b
+
+
+        const num1 = 200;
+        const num2 = 200;
+
+        // check only value
+        console.log("== equal to result = " + (num1 == num2 ? "True" : "False")); //True
+        // check value and date type 
+        console.log("== equal to result = " + (num1 === num2 ? "True" : "False")); //False
+
+
+        //check only value
+        console.log("!= not equal to result = " + (num1 != num2 ? "True" : "False")); //False
+        //check both value & data type
+        console.log("!== not equal to result = " + (num1 !== num2 ? "True" : "False")); //True
+
+        //check only if equal
+        console.log("> greter than result = " + (num1 > num2 ? "True" : "False")); //false
+        //check both if equal to same
+        console.log(">+ greter than eqaul result = " + (num1 >= num2 ? "True" : "False")); //True
+
+        //check only if equal
+        console.log("< less than result = " + (num1 < num2 ? "True" : "False")); //False
+            //check both if equal to same
+        console.log("<= less than eqaul result = " + (num1 <= num2 ? "True" : "False")); //True
+
+
+
+        //if statement
+
+        // if(condition){
+        //     what we want write here
+        // }else{
+        //      false message
+       // }
+
+        const index = "50";
+
+        if(index >= 60){
+            console.log("Yes");
+        }else{
+            console.log('No')
+        };
+
+        if(index === 50){
+            console.log('yes ,it is correct');
+        }else{
+            console.log('No it not correct');
+        };
+
+        if(index != 50){
+            console.log('yes ,it is correct');
+        }else{
+            console.log('No it not correct');
+        };
+
+        if(index !== 50){
+            console.log('yes ,it is correct');
+        }else{
+            console.log('No it not correct');
+        };
+        
+
+        //else if()
+
+        // if(condition){
+        //     if true this code will work
+        // }else if(condition){
+        //     code
+        // }else if(condition){
+
+        // } 
+        // else{
+        //     ....
+        // }
+
+        const c =  100;
+        const d = 1000;
+
+        if(c > d){
+            console.log("yes, it is correct");
+        }else if(c == d){
+            console.log("c is equal d")
+        }
+        else{
+            console.log("No ,it is not correct");
+        };
+
+        //Nested Conditon
+
+        const password = "abc123";
+
+        console.log(password.length); //7
+
+        if(password.length >= 5){
+            // console.log('password is okay');
+
+            if(password.indexOf(" ") === -1){
+                console.log("Valid Password ");
+            }else{
+                console.log("password can't contain space");
+            }   
+        }
+        else{
+            console.log('password must be long');
+        }
+
+
+        // switch statement 
+
+        // switch(statement){
+        //     case condition:
+        //         write what we want;
+        //         break;
+        //     case condition:
+        //         write what we want;
+        //         break;
+        //     case condition:
+        //         write what we want;
+        //         break;
+        //     default;
+        //         write what we want;
+        //         break;
+        // }
+
+
+        const color = "violent";
+
+        switch(color){
+            case "red":
+                console.log("No, my fav color is not red");
+                break;
+            case "black":
+                console.log("No, my fav color is not black");
+                break;
+            case "white":
+                console.log("No, my fav color is not white");
+                break;
+            case "blue":
+                console.log("Correct my fav color is blue");
+                break;
+            case "green":
+                console.log("No, my fav color is not green");
+                break;
+            default:
+                console.log("Game Over");
+                break;
+        }
+
+        // [0 - 6] 
+        let getday = new Date().getDay();
+        console.log(getday);
+
+        let today;
+
+        switch(getday){
+            case 0:
+                today = "Sunday";
+                break;
+            case 1:
+                today = "Monday";
+                break;
+            case 2:
+                today = "Tuesday";
+                break;
+            case 3:
+                today = "Wednesday";
+                break;
+            case 4:
+                today = "Thursday";
+                break;
+            case 5:
+                today = "Friday";
+                break;
+            // case 6:
+            //     today = "Saturaday";
+            //     break;
+            default:
+                today = "Saturaday";
+                break;
+        }
+
+        console.log(today);
+
+
+        let h = 50;
+        let i = 10;
+
+        console.log(h,i);
+
+
+        // h += i
+
+        // h -= i
+        // i *= h
+
+        // h /= i
+
+        // h %= i
+
+ 
+        console.log(h); 
+        
+
+//--------------------------------------------------
+
+        // window.alert("hello");
+        // prompt("enter your name");
+
+        // username =aungaung 
+        // password =12345
+
+        const username = prompt("Enter Username");
+        const userpassword = prompt("Enter Your Password");
+
+        console.log(username,userpassword);
+        console.log(typeof username ,typeof userpassword);//string string
+
+        // if(username === "aungaung" && userpassword === "12345"){
+        //     console.log("Welcome Aung Aung");
+        // }else{
+        //     console.log('Try Again');
+        // }
+
+        if(username === "aungaung" || userpassword === "12345"){
+            console.log("Welcome Aung Aung");
+        }else{
+            console.log('Try Again');
+        }
+
+
+
+
+        </script>
+    </body>
+</html>
+
+
+<!-- Comparison Opertors -->
+<!--  
+
+== eqal to
+=== equal to
+
+!= not equal to
+!== not equal to
+
+> greater than
+< less than
+
+>= greater than and equal
+<= less than and equal
+? Statement (ternary operator) 
+
+-->
+
+
+
+<!-- Assignment Operators  -->
+
+<!-- 
+=
++=
+-=
+*=
+/=
+%=  
+-->
+
+<!-- Logical Operators  -->
+<!-- 
+&& and 
+|| or 
+! not
+ -->
+
+ <!-- 25AO -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+

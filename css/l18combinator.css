@@ -1,0 +1,174 @@
+/*tag to tag*/
+/*div span{
+	color: green;
+}
+
+div{
+	color: red;
+}
+*/
+
+
+/*Muti Tag to Tag*/
+/*div span p{
+	color: green;
+}
+
+div p{
+	color: green;
+}
+*/
+
+/*Tag to Class*/
+span .add{
+	color: red;
+}
+
+/*Muti Tag to Class*/
+
+div span .add{
+	color: green;
+}
+
+/*Muti Tag to Same Class*/
+
+
+div span small.name{
+	color: green;
+}
+
+/* Class to  Class*/
+
+
+/*.money .currency{
+	color: green;
+}
+*/
+
+.bank .money .currency{
+	color: green;
+}
+
+/* Class to  Tag*/
+
+
+/*.ctg i{
+	color: green;
+}
+
+.ctg p{
+	color: red;
+}*/
+
+/* Class to Multi  Tag*/
+
+/*.none b span{
+	color: green;
+}
+*/
+/*Same Class */
+
+/*.mobile.kr{
+	color: green;
+}
+
+
+.mobile.ch2{
+	color: green;
+}*/
+
+/*Class to Same Class */
+/*.relationship .single.fa1{
+	color: green;
+}
+
+.relationship .single.fa4{
+	color: green;
+}
+*/
+
+
+/*Class to Tag by Group Selector*/
+
+.ctg p,.ctg b,.ctg i{
+	color: green;
+}
+
+
+/*Child Selector (>)*/
+
+.div1>b{
+	color: green;
+}
+
+.div1 > i{
+	color: green;
+}
+
+.div1 > .div2{
+	color: green;
+}
+
+/*(i)General Sibling Selector (~) */
+
+/*.div3~b{
+	color: green;
+}
+
+.div3 ~ .div5{
+	color: green;
+}
+
+.div3 ~ h4{
+	color: green;
+}
+*/
+
+/*Adjacent Sibling Selector (+)(nearby sibling*/
+.div6 + .div8{
+	color: green;
+}
+
+
+/*h4{
+
+}
+
+.hay{
+
+}
+
+h4 .hay{
+
+}
+
+h4 .hay.hi{
+
+}
+
+h4 ~ hay{
+
+}
+
+h4 + hay{
+
+}
+
+h4 > hay{
+	
+}*/
+
+
+/*
+space - relationship
+parent is all at the first 
+{} --
+
+gp selector (,)
+child selector (>)
+
+General Sibling Selector (~)
+Adjacent Sibling Selector (+)
+19GS
+*/
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Generator Function</title>
+
+    </head>
+    <body>
+
+      
+
+
+        <script type="text/javascript">
+
+            // 2 type of function 
+                // (1) Default Function | System Function 
+
+                // (2) User Define Function
+                        // (i) Regular Function
+                                // (a) Manual Function (without parameter)
+                                // (b) Paremeter Function 
+                                        // (1) Single paremeter function 
+                                        // (2) Multi parameter function 
+                        // (ii) Arrow Function (Ecma 6)
+                                // (a) Manual Function (without parameter)
+                                // (b) Paremeter Function 
+                                        // (1) Single paremeter function 
+                                        // (2) Multi parameter function 
+
+                        //Generator Function
+
+
+        // Generator Function
+        // yield
+        // next()
+
+        function test1(){
+            var x = 1;
+            x++;
+            return x;
+        }
+  
+        console.log(test1()); //2
+        console.log(test1()); //2
+
+        var y = 1;
+        function test2(){
+            y++;
+            return y;
+        }
+
+        console.log(test2()); //2
+        console.log(test2()); //3
+
+        function* gen1(){
+            yield 1;
+            yield 2;
+        }
+
+        // console.log(gen1()); //gen1 {<suspended>}
+        // console.log(gen1().next()); //{value: 1, done: false}
+        console.log(gen1().next().value); //1
+        console.log(gen1().next().value); //1
+        console.log(gen1().next().value); //1
+
+
+
+        const getgen = gen1();
+
+        console.log(getgen); //gen1 {<suspended>}
+        console.log(getgen.next()); //{value: 1, done: false}
+        console.log(getgen.next().value); //1  2 
+        console.log(getgen.next().value); //1  
+        console.log(getgen.next().value); //undefined   2 
+        console.log(getgen.next().value); //undefined
+        
+        // console.log()
+
+
+        </script>
+    </body>
+</html>
+
+
+<!-- 8AR  -->
+
+
+
+
+
+
+
+

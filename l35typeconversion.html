@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Type Coversion</title>
+    </head>
+    <body>
+
+
+        <script type="text/javascript">
+
+            //String (character array)
+
+            let power ;
+                power = 'aung aung';
+
+            console.log(power);
+            console.log(typeof power);
+            console.log(power.length); //9 string in keywoerd / lenght  use in array method
+
+
+
+            //Number to String 
+
+            // power = `20`;
+            power = String(20);
+
+            console.log(power);
+            console.log(typeof power);
+            console.log(power.length); //2
+
+            //Bollean to String
+            power = true;
+            // power = String(true);
+            power = String(power);
+
+            console.log(power);
+            console.log(typeof power); //String
+            console.log(power.length); //4
+
+            //Date to String
+
+            power = [1,2,3,4,5];
+            power = String([1,2,3,4,5]);
+
+            console.log(power);
+            console.log(typeof power); //string
+            console.log(power.length); //9
+
+
+
+
+
+            //String to number
+
+            power = "20";
+            // power = Number("20");
+            // power = Number(power);
+            power = +power;
+
+            console.log(power);
+            console.log(typeof power);
+            console.log(power.length); //undefined
+
+
+            // power =  +prompt("Enter your number");
+            // power = +power;
+
+            // console.log(power);
+            // console.log(typeof power);
+           
+
+            power = Number("aung aung"); //NaN = Not a number
+            power = +"aung aung";
+
+            console.log(power);
+            console.log(typeof power);
+            console.log(power.length);
+
+            power = 10 + 20;
+            power = 10 + "20.456";
+            power = 10 + +"20.456";
+            power = 10 + Number("20.456");
+
+            console.log(power);
+            console.log(typeof power); //number
+            console.log(power.length); //undefined
+
+            power = 123.456789;
+
+            console.log(power);
+            console.log(power.toFixed(5));
+            console.log(typeof power);
+            console.log(power.length);
+
+            power = 123;
+
+            console.log(power);
+            console.log(power.toFixed(3));
+            console.log(typeof power);
+            console.log(power.length);
+
+            power = "123.456789";
+            // power = +"123.456789";
+            // power = parseInt(power); //only integer 
+            power = parseFloat(power);
+
+            console.log(power);
+            console.log(power.toFixed(3));
+            console.log(typeof power);
+            console.log(power.length);
+
+            // length - array method 
+            // number = number method
+            // String = character array 
+            // toFixed = number method
+
+
+            // Boolean to Number
+
+            power = true;
+            power = Number(true);
+            // power = +false;
+
+            console.log(power);
+            console.log(power.toFixed(3));
+            console.log(typeof power);
+            console.log(power.length);
+
+
+            // String to Array 
+
+            power = "Lu Hpring";
+
+            power = Array.from(power);
+            
+            console.log(power); // ['L', 'u', ' ', 'H', 'p', 'r', 'i', 'n', 'g']
+            // console.log(power.toFixed(3));
+            console.log(typeof power);
+            console.log(power.length); //9
+
+            // number , boolean , Object can't convert to array 
+
+            power = {
+                name: "kyaw kyaw",
+                age: 25
+            };
+
+            power = Array.from(power);
+            
+            console.log(power);
+            console.log(typeof power);
+
+
+        </script>
+    </body>
+</html>
+
+<!-- 4PM -->
+
+
